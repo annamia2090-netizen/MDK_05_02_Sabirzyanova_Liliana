@@ -24,5 +24,12 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+        private void calculate_click(object sender, RoutedEventArgs e)
+        {
+            double x = Convert.ToDouble(X.Text);
+            double y = x - (Math.Pow(x, 3) / 3) + Math.Pow(x, 5) / 5;
+            result.Content = $"{Math.Round(y, 5)}";
+        }
+
     }
 }

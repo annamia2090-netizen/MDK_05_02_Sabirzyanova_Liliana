@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Вычислить Х" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Введите значение X:" Margin="24,57,619,57"  FontSize="14"/>
+        <TextBox Name="X" Margin="216,44,40,45" FontSize="14"/>
+        <Button Name="calculate" Content="Вычислить значение" Margin="53,35,53,47" FontSize="14" Click="calculate_click" Grid.Row="1"/>
+        <Label Name="result" Margin="10,10,10,10" FontSize="16" Content="Результат: " Grid.Row="2"/>
     </Grid>
+
 </Window>
